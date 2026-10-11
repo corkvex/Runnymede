@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-base: 255 255 255;
+  --color-surface: 250 250 250;
+  --color-elevated: 244 244 245;
+  --color-hover: 244 244 245;
+  --color-border: 228 228 231;
+  --color-input-border: 212 212 216;
+  --color-text: 24 24 27;
+  --color-text-2: 82 82 91;
+  --color-text-3: 113 113 122;
+  --color-active: 24 24 27;
+  --color-active-fg: 255 255 255;
+  --color-input: 255 255 255;
+  --color-grad-from: 228 228 231;
+  --color-grad-via: 244 244 245;
+}
+
+.dark {
+  --color-base: 10 10 10;
+  --color-surface: 23 23 23;
+  --color-elevated: 38 38 38;
+  --color-hover: 23 23 23;
+  --color-border: 38 38 38;
+  --color-input-border: 64 64 64;
+  --color-text: 255 255 255;
+  --color-text-2: 212 212 216;
+  --color-text-3: 115 115 115;
+  --color-active: 255 255 255;
+  --color-active-fg: 10 10 10;
+  --color-input: 10 10 10;
+  --color-grad-from: 38 38 38;
+  --color-grad-via: 23 23 23;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: rgb(var(--color-base));
+  color: rgb(var(--color-text));
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-base));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-elevated));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-text-3));
+}
