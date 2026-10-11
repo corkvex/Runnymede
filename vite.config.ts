@@ -18,8 +18,8 @@ base: '/Runnymede/',
         background_color: '#0a0a0a',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/',
-        start_url: '/',
+        scope: '/Runnymede/',
+        start_url: '/Runnymede/',
         icons: [
           {
             src: 'icon-192.png',
